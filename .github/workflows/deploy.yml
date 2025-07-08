@@ -40,6 +40,9 @@ jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
     needs: build
     steps:
       - name: Download build artifact
@@ -54,3 +57,4 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy ./build --project-name=homelab-pages
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
