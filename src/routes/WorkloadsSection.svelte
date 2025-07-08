@@ -39,7 +39,7 @@
   ];
 
   const hostedServices = [
-    'AdGuard', 'Affine', 'Bitwarden', 'DPaste', 'Homepage', 'LanguageTool', 
+    'AdGuard', 'Chatbox AI', 'Bitwarden', 'DPaste', 'Homepage', 'LanguageTool', 
     'LinkAce', 'Maybe', 'Minecraft', 'Nextcloud', 'Outline', 'OwnCloud', 
     'Reactive Resume', 'Ghost', 'Dependency-Track', 'Locust', 'SonarQube', 
     'Kubechecks', 'Jira', 'Harbor', 'OAuth2-Proxy', 'Descheduler', 'Atlantis',
