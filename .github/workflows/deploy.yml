@@ -35,7 +35,7 @@ jobs:
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          accountId: ${{ variables.CLOUDFLARE_ACCOUNT_ID }}
           projectName: homelab-pages
           directory: build
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
