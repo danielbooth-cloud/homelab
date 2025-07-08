@@ -4,4 +4,4 @@ compatibility_date = "2024-01-01"
 # Custom domain configuration
 [env.production]
 name = "homelab-pages"
-route = { pattern = "*", zone_name = "danielbooth.cloud" }
+route = { pattern = "homelab.pages.danielbooth.cloud", zone_name = "danielbooth.cloud" }
