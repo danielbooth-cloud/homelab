@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    name: Build
+    name: Deploy
     permissions:
       contents: read
       deployments: write
@@ -39,5 +39,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy .svelte-kit/cloudflare --project-name=homelab-pages
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
