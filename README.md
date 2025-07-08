@@ -1,58 +1,30 @@
-# Svelte library
+# Homelab Documentation Website
 
-Everything you need to build a Svelte library, powered by [`sv`](https://npmjs.com/package/sv).
+A modern, interactive documentation website built with SvelteKit that showcases Daniel's enterprise-grade homelab infrastructure. This site provides a comprehensive overview of a hybrid cloud Kubernetes setup with advanced networking, security, and AI/ML capabilities.
 
-Read more about creating a library [in the docs](https://svelte.dev/docs/kit/packaging).
+## 🏠 What This Documents
 
-## Creating a project
+This website showcases a complete home lab solution featuring:
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **Enterprise Infrastructure**: 128GB ECC RAM, 16c/32t EPYC CPU, 16GB GPU VRAM
+- **Hybrid Cloud Architecture**: On-premises homelab + Oracle Cloud Infrastructure (OCI)
+- **Container Orchestration**: Kubernetes clusters running on Talos Linux
+- **Zero-Trust Networking**: Tailscale VPN with centralized authentication via Zitadel
+- **Secure Public Access**: Cloudflared tunnels with DDoS protection and automatic HTTPS
+- **Storage Solutions**: TrueNAS Scale with high-performance NVMe storage
+- **GitOps Workflows**: ArgoCD with Helmfile for declarative infrastructure management
 
-```bash
-# create a new project in the current directory
-npx sv create
+## 🚀 Features
 
-# create a new project in my-app
-npx sv create my-app
-```
+The documentation website includes interactive sections for:
 
-## Developing
+- **Overview**: Key statistics and core technologies
+- **Architecture**: Detailed infrastructure diagrams and explanations
+- **Tech Stack**: Complete technology breakdown and workflows
+- **Workloads**: Production services and applications running in the lab
+- **Parts List**: Hardware specifications and components
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## 🛠️ Built With
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-Everything inside `src/lib` is part of your library, everything inside `src/routes` can be used as a showcase or preview app.
-
-## Building
-
-To build your library:
-
-```bash
-npm run package
-```
-
-To create a production version of your showcase app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
-
-## Publishing
-
-Go into the `package.json` and give your package the desired name through the `"name"` option. Also consider adding a `"license"` field and point it to a `LICENSE` file which you can create from a template (one popular option is the [MIT license](https://opensource.org/license/mit/)).
-
-To publish your library to [npm](https://www.npmjs.com):
-
-```bash
-npm publish
-```
+- **SvelteKit 5** - Modern web framework with reactive components
+- **TailwindCSS 4** - Utility-first CSS framework with modern styling
