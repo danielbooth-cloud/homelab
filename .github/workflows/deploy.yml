@@ -1,10 +1,6 @@
 name: Deploy to Cloudflare Pages
 
-on:
-  push:
-    branches: 'feature/cloudflare'
-  pull_request:
-    branches: 'main'
+on: [push]
 
 jobs:
   build:
@@ -14,7 +10,7 @@ jobs:
       deployments: write
     runs-on: ubuntu-latest
     steps:
-    
+     
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -41,4 +37,4 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          command: pages deploy
+          command: pages deploy --commit-dirty=true
