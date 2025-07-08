@@ -35,7 +35,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build
-          path: svelte-kit/cloudflare
+          path: .svelte-kit/cloudflare
 
   deploy:
     name: Deploy
