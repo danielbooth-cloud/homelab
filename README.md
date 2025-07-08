@@ -28,3 +28,4 @@ The documentation website includes interactive sections for:
 
 - **SvelteKit 5** - Modern web framework with reactive components
 - **TailwindCSS 4** - Utility-first CSS framework with modern styling
+- **Cloudflare Pages** - Edge-optimized hosting with global CDN
