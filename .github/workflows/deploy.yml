@@ -8,8 +8,11 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
     name: Build
+    permissions:
+      contents: read
+      deployments: write
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -30,26 +33,6 @@ jobs:
 
       - name: Build
         run: pnpm run build
-
-      - name: Upload build output
-        uses: actions/upload-artifact@v4
-        with:
-          name: build
-          path: .svelte-kit/cloudflare
-
-  deploy:
-    name: Deploy
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      deployments: write
-    needs: build
-    steps:
-      - name: Download build artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: build
-          path: .svelte-kit/cloudflare
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
