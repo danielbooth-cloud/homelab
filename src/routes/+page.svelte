@@ -46,7 +46,7 @@
             style="{
               activeSection === item.id
                 ? 'background-color: var(--color-palette-pink); color: var(--color-palette-light); box-shadow: 0 4px 6px -1px var(--color-palette-dark), 0 2px 4px -2px var(--color-palette-dark); transform: translateX(0.25rem);'
-                : 'color: var(--color-palette-light); background-color: var(--color-palette-faded-dark); border: 2px solid var(--color-palette-pink);'
+                : 'color: var(--color-palette-light); background-color: var(--color-palette-dark); border: 2px solid var(--color-palette-pink);'
             }"
           >
             {#if item.icon}

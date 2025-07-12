@@ -226,7 +226,7 @@
             <div class="grid grid-cols-2 gap-2 text-xs">
               {#each Object.entries(component.specs) as [key, value]}
                 <div class="bg-[var(--color-palette-faded-pink)] p-2 rounded-lg border-l-2 border-[var(--color-palette-pink)] hover:border-l-4 transition-all duration-200">
-                  <span class="font-medium text-[var(--color-palette-pink)]">{key}:</span>
+                  <span class="font-bold text-[var(--color-palette-pink)]">{key}:</span>
                   <span class="text-[var(--color-palette-light)] ml-1">{value}</span>
                 </div>
               {/each}
@@ -259,7 +259,7 @@
             <div class="grid grid-cols-1 gap-2 text-xs">
               {#each Object.entries(component.specs) as [key, value]}
                 <div class="bg-[var(--color-palette-faded-emerald)] p-2 rounded-lg border-l-2 border-[var(--color-palette-emerald)] hover:border-l-4 transition-all duration-200">
-                  <span class="font-medium text-[var(--color-palette-emerald)]">{key}:</span>
+                  <span class="font-bold text-[var(--color-palette-emerald)]">{key}:</span>
                   <span class="text-[var(--color-palette-light)] ml-1">{value}</span>
                 </div>
               {/each}
