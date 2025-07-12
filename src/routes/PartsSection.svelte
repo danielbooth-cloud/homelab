@@ -25,9 +25,9 @@
     },
     phase2: {
       title: 'Phase 2: AI/ML Capabilities',
-      cost: 477, // £477 (was $650)
+      cost: 710, // £477 (was $650)
       items: [
-        { name: 'RTX 5060 Ti 16GB', price: 367, specs: '16GB GDDR6, 40-50 tokens/sec' }, // £367 (was $500)
+        { name: 'RTX 3090 24GB', price: 600, specs: '24GB GDDR6, 40-50 tokens/sec' }, // £367 (was $500)
         { name: 'HP t640 Thin Client', price: 110, specs: 'AMD Ryzen R1505G, 8GB DDR4, 32GB eMMC, Dual 4K support' } // £110 (was $150)
       ]
     },

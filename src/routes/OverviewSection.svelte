@@ -2,7 +2,7 @@
   const stats = [
     { value: '128GB', label: 'ECC RAM', desc: 'Enterprise memory' },
     { value: '16c/32t', label: 'EPYC CPU', desc: 'Server-grade processing' },
-    { value: '16GB', label: 'GPU VRAM', desc: 'AI/ML acceleration' },
+    { value: '24GB', label: 'GPU VRAM', desc: 'AI/ML acceleration' },
     { value: '4TB+', label: 'NVMe Storage', desc: 'Ultra-fast SSDs' },
     { value: '20-30', label: 'VMs', desc: 'Production workloads' },
     { value: '99.9%', label: 'Uptime', desc: 'High availability' }
