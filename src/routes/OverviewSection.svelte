@@ -31,7 +31,7 @@
   <!-- Stats Grid -->
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     {#each stats as stat, i}
-      <div class="group bg-[var(--color-palette-dark)] border-2 border-[var(--color-palette-faded-slate)] p-8 rounded-2xl shadow-xl hover:border-[var(--color-palette-pink)] transform hover:scale-[1.03] hover:-translate-y-2 transition-all duration-400 hover:shadow-2xl cursor-pointer" style="transition-delay: {i * 75}ms">
+      <div class="group bg-[var(--color-palette-faded-purple)] border-2 border-[var(--color-palette-faded-slate)] p-8 rounded-2xl shadow-xl hover:border-[var(--color-palette-pink)] transform hover:scale-[1.03] hover:-translate-y-2 transition-all duration-400 hover:shadow-2xl cursor-pointer" style="transition-delay: {i * 75}ms">
         <div class="flex items-center justify-between mb-4">
           <div class="w-3 h-3 bg-[var(--color-palette-emerald)] rounded-full group-hover:bg-[var(--color-palette-pink)] transition-colors duration-300"></div>
           <div class="w-8 h-1 bg-[var(--color-palette-faded-emerald)] rounded-full group-hover:bg-[var(--color-palette-faded-pink)] transition-colors duration-300"></div>
@@ -45,7 +45,7 @@
 
   <!-- Feature Cards -->
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-    <div class="group bg-[var(--color-palette-dark)] border-2 border-[var(--color-palette-pink)] rounded-2xl p-8 shadow-2xl hover:shadow-[0_20px_50px_rgba(255,26,117,0.3)] transform hover:scale-[1.02] hover:-translate-y-1 transition-all duration-500 relative overflow-hidden">
+    <div class="group bg-[var(--color-palette-faded-purple)] border-2 border-[var(--color-palette-pink)] rounded-2xl p-8 shadow-2xl hover:shadow-[0_20px_50px_rgba(255,26,117,0.3)] transform hover:scale-[1.02] hover:-translate-y-1 transition-all duration-500 relative overflow-hidden">
       <div class="absolute top-0 right-0 w-32 h-32 bg-[var(--color-palette-faded-pink)] rounded-full -translate-y-16 translate-x-16 opacity-20"></div>
       <div class="relative z-10">
         <div class="flex items-center gap-4 mb-6">
@@ -78,7 +78,7 @@
       </div>
     </div>
     
-    <div class="group bg-[var(--color-palette-dark)] border-2 border-[var(--color-palette-emerald)] rounded-2xl p-8 shadow-2xl hover:shadow-[0_20px_50px_rgba(35,216,161,0.3)] transform hover:scale-[1.02] hover:-translate-y-1 transition-all duration-500 relative overflow-hidden">
+    <div class="group bg-[var(--color-palette-faded-purple)] border-2 border-[var(--color-palette-emerald)] rounded-2xl p-8 shadow-2xl hover:shadow-[0_20px_50px_rgba(35,216,161,0.3)] transform hover:scale-[1.02] hover:-translate-y-1 transition-all duration-500 relative overflow-hidden">
       <div class="absolute top-0 right-0 w-32 h-32 bg-[var(--color-palette-faded-emerald)] rounded-full -translate-y-16 translate-x-16 opacity-20"></div>
       <div class="relative z-10">
         <div class="flex items-center gap-4 mb-6">
@@ -113,7 +113,7 @@
   </div>
 
   <!-- Core Technologies Section -->
-  <div class="bg-[var(--color-palette-dark)] border-2 border-[var(--color-palette-faded-slate)] rounded-3xl p-10 shadow-2xl hover:border-[var(--color-palette-emerald)] transition-all duration-500">
+  <div class="bg-[var(--color-palette-faded-purple)] border-2 border-[var(--color-palette-faded-slate)] rounded-3xl p-10 shadow-2xl hover:border-[var(--color-palette-emerald)] transition-all duration-500">
     <div class="text-center mb-10">
       <div class="flex items-center justify-center gap-3 mb-4">
         <div class="w-2 h-2 bg-[var(--color-palette-pink)] rounded-full"></div>

@@ -87,7 +87,7 @@
       </div>
     {/each}
   </div>
-  <div class="bg-[var(--color-palette-dark)] border-3 border-[var(--color-palette-faded-slate)] rounded-3xl p-10 shadow-2xl hover:border-[var(--color-palette-pink)] transition-all duration-500">
+  <div class="bg-[var(--color-palette-faded-purple)] border-3 border-[var(--color-palette-pink)] rounded-3xl p-10 shadow-2xl">
     <div class="flex items-center gap-4 mb-6">
       <div class="w-14 h-14 bg-[var(--color-palette-pink)] text-[var(--color-palette-light)] rounded-2xl flex items-center justify-center shadow-lg">
         <Server class="w-8 h-8" />
