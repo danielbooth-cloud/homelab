@@ -61,17 +61,22 @@
 </script>
 
 <div class="space-y-8">
-  <div class="bg-(--color-palette-emerald) text-(--color-palette-light) p-8 rounded-2xl shadow-xl relative overflow-hidden">
+  <div class="bg-[var(--color-palette-dark)] border-2 border-[var(--color-palette-pink)] text-[var(--color-palette-light)] p-8 rounded-3xl shadow-2xl transform hover:scale-[1.005] transition-all duration-500 relative overflow-hidden">
+    <div class="absolute top-4 right-4 w-12 h-12 bg-[var(--color-palette-faded-emerald)] rounded-full opacity-60"></div>
+    <div class="absolute bottom-4 left-4 w-8 h-8 bg-[var(--color-palette-faded-pink)] rounded-full opacity-40"></div>
     <div class="relative z-10">
-      <h2 class="text-4xl font-extrabold mb-2 drop-shadow-md">Hardware Parts List</h2>
-      <p class="text-lg">Components that make up this impressive homelab setup</p>
+      <div class="mb-4">
+        <h2 class="text-4xl font-black mb-2 tracking-tight">Hardware Parts List</h2>
+        <div class="w-20 h-1 bg-[var(--color-palette-pink)] rounded-full"></div>
+      </div>
+      <p class="text-lg font-light leading-relaxed">Components that make up this impressive homelab setup</p>
     </div>
   </div>
-  <div class="flex gap-2 flex-wrap">
+  <div class="flex gap-3 flex-wrap">
     {#each ['all', 'phase1', 'phase2', 'phase3'] as phase}
       <button
         onclick={() => selectedPhase = phase}
-        class="px-6 py-2.5 rounded-xl text-sm font-medium shadow-md transition-all duration-300 transform hover:scale-105 {selectedPhase === phase ? 'bg-(--color-palette-pink) text-(--color-palette-light)' : 'bg-(--color-palette-light) text-(--color-palette-emerald) border border-(--color-palette-emerald)'}"
+        class="px-6 py-3 rounded-xl text-sm font-bold shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl {selectedPhase === phase ? 'bg-[var(--color-palette-pink)] text-[var(--color-palette-light)] border-2 border-[var(--color-palette-pink)]' : 'bg-[var(--color-palette-faded-slate)] text-[var(--color-palette-light)] border-2 border-[var(--color-palette-emerald)] hover:border-[var(--color-palette-pink)] hover:bg-[var(--color-palette-faded-pink)]'}"
       >
         {phase === 'all' ? 'Complete Build' : `Phase ${phase.slice(-1)}`}
       </button>
@@ -79,31 +84,45 @@
   </div>
   <div class="space-y-6">
     {#each phases as phase, i}
-      <div class="bg-(--color-palette-light) rounded-xl shadow-xl border border-(--color-palette-emerald) p-6 transform hover:scale-[1.01] transition-all duration-300" style="transition-delay: {i * 100}ms">
-        <div class="flex justify-between items-center mb-6">
+      <div class="bg-[var(--color-palette-faded-slate)] rounded-xl shadow-xl border border-[var(--color-palette-emerald)] p-6 transform hover:scale-[1.015] hover:shadow-2xl hover:border-[var(--color-palette-pink)] transition-all duration-300 relative overflow-hidden group" style="transition-delay: {i * 100}ms">
+        <div class="absolute -top-8 -right-8 w-24 h-24 bg-[var(--color-palette-faded-emerald)] rounded-full opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+        <div class="flex justify-between items-center mb-6 relative z-10">
           <div>
-            <h3 class="text-xl font-bold text-(--color-palette-emerald)">{phase.title}</h3>
-            <p class="text-(--color-palette-emerald)">{phase.timeline}</p>
+            <h3 class="text-2xl font-bold text-[var(--color-palette-emerald)] group-hover:text-[var(--color-palette-pink)] transition-colors duration-300">{phase.title}</h3>
+            <div class="w-16 h-0.5 bg-[var(--color-palette-emerald)] mt-1 group-hover:bg-[var(--color-palette-pink)] transition-colors duration-300"></div>
           </div>
-          <div class="text-xl font-bold text-(--color-palette-emerald)">£{phase.cost.toLocaleString()}</div>
+          <div class="text-2xl font-bold text-[var(--color-palette-pink)] bg-[var(--color-palette-faded-pink)] px-4 py-2 rounded-lg shadow-md">£{phase.cost.toLocaleString()}</div>
         </div>
-        <div class="space-y-4">
+        <div class="space-y-4 relative z-10">
           {#each phase.items as item, j}
-            <div class="bg-(--color-palette-faded-pink) rounded-lg p-4 border-l-4 border-(--color-palette-pink) transform hover:translate-x-1 transition-all duration-200" style="transition-delay: {j * 50}ms">
-              <div class="flex justify-between items-start mb-2">
-                <h4 class="font-bold text-(--color-palette-emerald)">{item.name}</h4>
-                <span class="text-lg font-bold text-(--color-palette-pink)">£{item.price}</span>
+            <div class="bg-[var(--color-palette-dark)] rounded-lg p-5 border-l-4 border-[var(--color-palette-emerald)] transform hover:translate-x-2 hover:scale-[1.02] hover:border-l-[var(--color-palette-pink)] hover:shadow-lg transition-all duration-300 group/item" style="transition-delay: {j * 50}ms">
+              <div class="flex justify-between items-start mb-3">
+                <h4 class="font-bold text-[var(--color-palette-light)] text-lg group-hover/item:text-[var(--color-palette-emerald)] transition-colors duration-300">{item.name}</h4>
+                <span class="text-xl font-bold text-[var(--color-palette-pink)] bg-[var(--color-palette-faded-pink)] px-3 py-1 rounded-lg shadow-sm">£{item.price}</span>
               </div>
-              <p class="text-sm text-(--color-palette-emerald)">{item.specs}</p>
+              <p class="text-sm text-[var(--color-palette-light)] leading-relaxed group-hover/item:text-[var(--color-palette-emerald)] transition-colors duration-300">{item.specs}</p>
             </div>
           {/each}
         </div>
       </div>
     {/each}
   </div>
-  <div class="bg-(--color-palette-light) p-6 rounded-xl shadow-lg border border-(--color-palette-emerald)">
-    <div class="text-2xl font-bold text-(--color-palette-emerald) text-center mt-4">
-      Total Investment: £{totalCost.toLocaleString()}
+  <div class="bg-[var(--color-palette-dark)] border-2 border-[var(--color-palette-emerald)] p-8 rounded-2xl shadow-2xl hover:border-[var(--color-palette-pink)] hover:shadow-3xl transition-all duration-500 relative overflow-hidden group">
+    <div class="absolute -top-16 -right-16 w-32 h-32 bg-[var(--color-palette-faded-emerald)] rounded-full opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
+    <div class="absolute top-8 right-6 w-8 h-8 bg-[var(--color-palette-pink)] rounded-full opacity-40 animate-pulse"></div>
+    <div class="absolute top-16 left-16 w-6 h-6 bg-[var(--color-palette-emerald)] rounded-full opacity-50 group-hover:bg-[var(--color-palette-pink)] transition-colors duration-300"></div>
+    <div class="absolute top-20 right-12 w-10 h-10 bg-[var(--color-palette-pink)] rounded-full opacity-35 group-hover:bg-[var(--color-palette-emerald)] transition-colors duration-300"></div>
+    <div class="absolute top-28 left-6 w-4 h-4 bg-[var(--color-palette-emerald)] rounded-full opacity-60 animate-pulse"></div>
+    <div class="absolute bottom-8 left-8 w-12 h-12 bg-[var(--color-palette-faded-pink)] rounded-full opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+    <div class="absolute bottom-16 right-20 w-5 h-5 bg-[var(--color-palette-emerald)] rounded-full opacity-45 group-hover:scale-110 transition-transform duration-300"></div>
+    <div class="relative z-10 text-center">
+      <div class="text-3xl font-black text-[var(--color-palette-emerald)] mb-2 group-hover:text-[var(--color-palette-pink)] transition-colors duration-300">
+        Total Investment
+      </div>
+      <div class="text-4xl font-black text-[var(--color-palette-pink)] bg-[var(--color-palette-faded-pink)] px-6 py-3 rounded-xl shadow-lg inline-block transform group-hover:scale-105 transition-transform duration-300">
+        £{totalCost.toLocaleString()}
+      </div>
+      <p class="text-[var(--color-palette-light)] mt-3 text-lg">Professional-grade homelab infrastructure</p>
     </div>
   </div>
 </div>
