@@ -12,13 +12,13 @@
   const partsData: PartsData = {
     phase1: {
       title: 'Phase 1: Foundation',
-      cost: 917, // £917 (was $1250)
+      cost: 979, // £917 (was $1250)
       items: [
         { name: 'AMD EPYC 7302P CPU', price: 293, specs: '16c/32t, 155W TDP' }, // £293 (was $400)
         { name: 'Supermicro H12SSL-i Motherboard', price: 220, specs: '8x DDR4, 1TB max RAM' }, // £220 (was $300)
         { name: '64GB DDR4-3200 ECC RAM', price: 183, specs: '4x 16GB modules' }, // £183 (was $250)
         { name: '2x 1TB NVMe SSD', price: 88, specs: 'OS & containers' }, // £88 (was $120)
-        { name: '850W 80+ Gold PSU', price: 88, specs: 'Modular, 10yr warranty' }, // £88 (was $120)
+        { name: '1200W 80+ Gold PSU', price: 150, specs: 'Modular, 10yr warranty' }, // £88 (was $120)
         { name: 'CPU Cooler', price: 29, specs: 'SP3 compatible' }, // £29 (was $40)
         { name: 'Fractal Design Define 7 Case', price: 59, specs: 'E-ATX, good airflow' } // £59 (was $80)
       ]
