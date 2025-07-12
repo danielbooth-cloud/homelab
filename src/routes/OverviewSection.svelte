@@ -9,131 +9,176 @@
   ];
 </script>
 
-<div class="space-y-8">
-  <div class="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white p-10 rounded-2xl shadow-2xl transform hover:scale-[1.01] transition-transform duration-300 relative overflow-hidden w-full">
-    <div class="absolute top-0 left-0 w-full h-full bg-white/5 backdrop-blur-sm opacity-20 z-0"></div>
-    <div class="absolute -top-24 -right-24 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
-    <div class="absolute -bottom-32 -left-32 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
-    <div class="relative z-10 w-full">
-      <h1 class="text-5xl font-extrabold mb-4 drop-shadow-md">🏠 Complete Home Lab Solution</h1>
-      <p class="text-xl opacity-90 w-full">Enterprise-Grade Infrastructure with Kubernetes, CloudStack, AI/ML, and Zero-Trust Security</p>
+<div class="space-y-12">
+  <!-- Hero Section -->
+  <div class="bg-[var(--color-palette-dark)] border-2 border-[var(--color-palette-pink)] text-[var(--color-palette-light)] p-12 rounded-3xl shadow-2xl transform hover:scale-[1.005] transition-all duration-500 relative overflow-hidden">
+    <div class="absolute top-4 right-4 w-16 h-16 bg-[var(--color-palette-faded-pink)] rounded-full opacity-60"></div>
+    <div class="absolute bottom-4 left-4 w-12 h-12 bg-[var(--color-palette-faded-emerald)] rounded-full opacity-40"></div>
+    <div class="relative z-10">
+      <div class="flex items-center gap-4 mb-6">
+        <div class="w-16 h-16 bg-[var(--color-palette-pink)] rounded-2xl flex items-center justify-center shadow-lg">
+          <span class="text-3xl">🏠</span>
+        </div>
+        <div>
+          <h1 class="text-6xl font-black mb-2 tracking-tight">Complete Home Lab</h1>
+          <div class="w-24 h-1 bg-[var(--color-palette-emerald)] rounded-full"></div>
+        </div>
+      </div>
+      <p class="text-2xl font-light leading-relaxed max-w-4xl">Enterprise-Grade Infrastructure with Kubernetes, CloudStack, AI/ML, and Zero-Trust Security</p>
     </div>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  <!-- Stats Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     {#each stats as stat, i}
-      <div class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-6 rounded-xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 transform hover:scale-105 transition-all duration-300 hover:shadow-2xl" style="transition-delay: {i * 50}ms">
-        <div class="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 mb-2">{stat.value}</div>
-        <div class="text-gray-900 dark:text-white font-medium">{stat.label}</div>
-        <div class="text-sm text-gray-600 dark:text-gray-400">{stat.desc}</div>
+      <div class="group bg-[var(--color-palette-dark)] border-2 border-[var(--color-palette-faded-slate)] p-8 rounded-2xl shadow-xl hover:border-[var(--color-palette-pink)] transform hover:scale-[1.03] hover:-translate-y-2 transition-all duration-400 hover:shadow-2xl cursor-pointer" style="transition-delay: {i * 75}ms">
+        <div class="flex items-center justify-between mb-4">
+          <div class="w-3 h-3 bg-[var(--color-palette-emerald)] rounded-full group-hover:bg-[var(--color-palette-pink)] transition-colors duration-300"></div>
+          <div class="w-8 h-1 bg-[var(--color-palette-faded-emerald)] rounded-full group-hover:bg-[var(--color-palette-faded-pink)] transition-colors duration-300"></div>
+        </div>
+        <div class="text-5xl font-black text-[var(--color-palette-pink)] mb-3 group-hover:text-[var(--color-palette-emerald)] transition-colors duration-300">{stat.value}</div>
+        <div class="text-[var(--color-palette-light)] font-bold text-lg mb-1">{stat.label}</div>
+        <div class="text-sm text-[var(--color-palette-light)] opacity-80">{stat.desc}</div>
       </div>
     {/each}
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div class="bg-gradient-to-r from-orange-100 to-red-100 dark:from-orange-900/40 dark:to-red-900/40 border border-orange-200/50 dark:border-orange-700/50 rounded-xl p-6 shadow-xl backdrop-blur-sm transform hover:scale-[1.02] transition-all duration-300 relative overflow-hidden group">
-      <div class="absolute inset-0 bg-orange-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-      <div class="absolute -top-16 -right-16 w-32 h-32 bg-orange-500/10 rounded-full blur-2xl group-hover:bg-orange-500/20 transition-colors duration-300"></div>
-      <div class="flex items-center gap-3 mb-4">
-        <div class="bg-gradient-to-br from-orange-500 to-red-500 text-white p-2 rounded-lg shadow-lg">
-          <span class="text-xl">🔗</span>
+  <!-- Feature Cards -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+    <div class="group bg-[var(--color-palette-dark)] border-2 border-[var(--color-palette-pink)] rounded-2xl p-8 shadow-2xl hover:shadow-[0_20px_50px_rgba(255,26,117,0.3)] transform hover:scale-[1.02] hover:-translate-y-1 transition-all duration-500 relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-32 h-32 bg-[var(--color-palette-faded-pink)] rounded-full -translate-y-16 translate-x-16 opacity-20"></div>
+      <div class="relative z-10">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-14 h-14 bg-[var(--color-palette-pink)] text-[var(--color-palette-light)] rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+            <span class="text-2xl">🔗</span>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-[var(--color-palette-pink)] group-hover:text-[var(--color-palette-light)] transition-colors duration-300">Tailscale Zero-Trust VPN</h3>
+            <div class="w-16 h-0.5 bg-[var(--color-palette-pink)] mt-1 group-hover:w-24 transition-all duration-300"></div>
+          </div>
         </div>
-        <h3 class="text-xl font-bold text-orange-900 dark:text-orange-100">Tailscale Zero-Trust VPN Network</h3>
-      </div>
-      <div class="space-y-2">
-        <div class="flex items-center gap-2 text-orange-800 dark:text-orange-200">
-          <span class="inline-block w-2 h-2 bg-orange-500 rounded-full"></span>
-          <span>Secure WireGuard-based overlay network</span>
-        </div>
-        <div class="flex items-center gap-2 text-orange-800 dark:text-orange-200">
-          <span class="inline-block w-2 h-2 bg-orange-500 rounded-full"></span>
-          <span>IP Range: 100.64.0.0/10</span>
-        </div>
-        <div class="flex items-center gap-2 text-orange-800 dark:text-orange-200">
-          <span class="inline-block w-2 h-2 bg-orange-500 rounded-full"></span>
-          <span>End-to-end encryption</span>
-        </div>
-        <div class="flex items-center gap-2 text-orange-800 dark:text-orange-200">
-          <span class="inline-block w-2 h-2 bg-orange-500 rounded-full"></span>
-          <span>Zero-trust architecture</span>
-        </div>
-        <div class="flex items-center gap-2 text-orange-800 dark:text-orange-200">
-          <span class="inline-block w-2 h-2 bg-orange-500 rounded-full"></span>
-          <span>Centralized auth via Zitadel</span>
+        <div class="space-y-4">
+          <div class="flex items-start gap-3 text-[var(--color-palette-light)] group-hover:translate-x-1 transition-transform duration-300">
+            <div class="w-2 h-2 bg-[var(--color-palette-pink)] rounded-full mt-2 flex-shrink-0"></div>
+            <span class="font-medium">Secure WireGuard-based overlay network</span>
+          </div>
+          <div class="flex items-start gap-3 text-[var(--color-palette-light)] group-hover:translate-x-1 transition-transform duration-300">
+            <div class="w-2 h-2 bg-[var(--color-palette-pink)] rounded-full mt-2 flex-shrink-0"></div>
+            <span class="font-medium">IP Range: <code class="bg-[var(--color-palette-faded-pink)] px-2 py-1 rounded text-sm">100.64.0.0/10</code></span>
+          </div>
+          <div class="flex items-start gap-3 text-[var(--color-palette-light)] group-hover:translate-x-1 transition-transform duration-300">
+            <div class="w-2 h-2 bg-[var(--color-palette-pink)] rounded-full mt-2 flex-shrink-0"></div>
+            <span class="font-medium">End-to-end encryption & Zero-trust architecture</span>
+          </div>
+          <div class="flex items-start gap-3 text-[var(--color-palette-light)] group-hover:translate-x-1 transition-transform duration-300">
+            <div class="w-2 h-2 bg-[var(--color-palette-pink)] rounded-full mt-2 flex-shrink-0"></div>
+            <span class="font-medium">Centralized authentication via Zitadel</span>
+          </div>
         </div>
       </div>
     </div>
-    <div class="bg-gradient-to-r from-green-100 to-blue-100 dark:from-green-900/40 dark:to-blue-900/40 border border-green-200/50 dark:border-green-700/50 rounded-xl p-6 shadow-xl backdrop-blur-sm transform hover:scale-[1.02] transition-all duration-300 relative overflow-hidden group">
-      <div class="absolute inset-0 bg-green-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-      <div class="absolute -top-16 -right-16 w-32 h-32 bg-green-500/10 rounded-full blur-2xl group-hover:bg-green-500/20 transition-colors duration-300"></div>
-      <div class="flex items-center gap-3 mb-4">
-        <div class="bg-gradient-to-br from-green-500 to-blue-500 text-white p-2 rounded-lg shadow-lg">
-          <span class="text-xl">☁️</span>
+    
+    <div class="group bg-[var(--color-palette-dark)] border-2 border-[var(--color-palette-emerald)] rounded-2xl p-8 shadow-2xl hover:shadow-[0_20px_50px_rgba(35,216,161,0.3)] transform hover:scale-[1.02] hover:-translate-y-1 transition-all duration-500 relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-32 h-32 bg-[var(--color-palette-faded-emerald)] rounded-full -translate-y-16 translate-x-16 opacity-20"></div>
+      <div class="relative z-10">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-14 h-14 bg-[var(--color-palette-emerald)] text-[var(--color-palette-light)] rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+            <span class="text-2xl">☁️</span>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-[var(--color-palette-emerald)] group-hover:text-[var(--color-palette-light)] transition-colors duration-300">Cloudflared Tunnels</h3>
+            <div class="w-16 h-0.5 bg-[var(--color-palette-emerald)] mt-1 group-hover:w-24 transition-all duration-300"></div>
+          </div>
         </div>
-        <h3 class="text-xl font-bold text-green-900 dark:text-green-100">Cloudflared Tunnels</h3>
-      </div>
-      <div class="space-y-2">
-        <div class="flex items-center gap-2 text-green-800 dark:text-green-200">
-          <span class="inline-block w-2 h-2 bg-green-500 rounded-full"></span>
-          <span>Secure public access without port forwarding</span>
-        </div>
-        <div class="flex items-center gap-2 text-green-800 dark:text-green-200">
-          <span class="inline-block w-2 h-2 bg-green-500 rounded-full"></span>
-          <span>DDoS protection & WAF</span>
-        </div>
-        <div class="flex items-center gap-2 text-green-800 dark:text-green-200">
-          <span class="inline-block w-2 h-2 bg-green-500 rounded-full"></span>
-          <span>Automatic HTTPS certificates</span>
-        </div>
-        <div class="flex items-center gap-2 text-green-800 dark:text-green-200">
-          <span class="inline-block w-2 h-2 bg-green-500 rounded-full"></span>
-          <span>Global CDN edge locations</span>
-        </div>
-        <div class="flex items-center gap-2 text-green-800 dark:text-green-200">
-          <span class="inline-block w-2 h-2 bg-green-500 rounded-full"></span>
-          <span>Zero trust security</span>
+        <div class="space-y-4">
+          <div class="flex items-start gap-3 text-[var(--color-palette-light)] group-hover:translate-x-1 transition-transform duration-300">
+            <div class="w-2 h-2 bg-[var(--color-palette-emerald)] rounded-full mt-2 flex-shrink-0"></div>
+            <span class="font-medium">Secure public access without port forwarding</span>
+          </div>
+          <div class="flex items-start gap-3 text-[var(--color-palette-light)] group-hover:translate-x-1 transition-transform duration-300">
+            <div class="w-2 h-2 bg-[var(--color-palette-emerald)] rounded-full mt-2 flex-shrink-0"></div>
+            <span class="font-medium">DDoS protection & Web Application Firewall</span>
+          </div>
+          <div class="flex items-start gap-3 text-[var(--color-palette-light)] group-hover:translate-x-1 transition-transform duration-300">
+            <div class="w-2 h-2 bg-[var(--color-palette-emerald)] rounded-full mt-2 flex-shrink-0"></div>
+            <span class="font-medium">Automatic HTTPS certificates & Global CDN</span>
+          </div>
+          <div class="flex items-start gap-3 text-[var(--color-palette-light)] group-hover:translate-x-1 transition-transform duration-300">
+            <div class="w-2 h-2 bg-[var(--color-palette-emerald)] rounded-full mt-2 flex-shrink-0"></div>
+            <span class="font-medium">Zero trust security architecture</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="mt-12">
-    <div class="bg-white/80 dark:bg-gray-800/80 rounded-2xl shadow border border-gray-200/50 dark:border-gray-700/50 p-8">
-      <h2 class="text-3xl font-bold mb-6 text-center text-gray-800 dark:text-gray-100">Core Technologies</h2>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
-        <a href="https://cloudstack.apache.org/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center bg-white/80 dark:bg-gray-800/80 p-4 rounded-xl shadow border border-gray-200/50 dark:border-gray-700/50 w-full transition-transform hover:scale-105 focus:scale-105 cursor-pointer">
-          <img src="https://cdn.worldvectorlogo.com/logos/apache-cloudstack.svg" alt="Apache Cloudstack" class="h-10 mb-2" />
-          <span class="font-semibold">Apache Cloudstack</span>
-        </a>
-        <a href="https://www.oracle.com/cloud/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center bg-white/80 dark:bg-gray-800/80 p-4 rounded-xl shadow border border-gray-200/50 dark:border-gray-700/50 w-full transition-transform hover:scale-105 focus:scale-105 cursor-pointer">
-          <img src="https://brandlogos.net/wp-content/uploads/2021/10/oracle-logo-symbol-vector-512x512.png" alt="OCI" class="h-10 mb-2" />
-          <span class="font-semibold">OCI</span>
-        </a>
-        <a href="https://kubernetes.io/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center bg-white/80 dark:bg-gray-800/80 p-4 rounded-xl shadow border border-gray-200/50 dark:border-gray-700/50 w-full transition-transform hover:scale-105 focus:scale-105 cursor-pointer">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/723px-Kubernetes_logo_without_workmark.svg.png" alt="Kubernetes" class="h-10 mb-2" />
-          <span class="font-semibold">Kubernetes</span>
-        </a>
-        <a href="https://www.truenas.com/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center bg-white/80 dark:bg-gray-800/80 p-4 rounded-xl shadow border border-gray-200/50 dark:border-gray-700/50 w-full transition-transform hover:scale-105 focus:scale-105 cursor-pointer">
-          <img src="https://www.osboxes.org/wp-content/uploads/2022/02/truenas-logo.png" alt="TrueNAS Scale" class="h-10 mb-2" />
-          <span class="font-semibold">TrueNAS Scale</span>
-        </a>
-        <a href="https://www.cloudflare.com/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center bg-white/80 dark:bg-gray-800/80 p-4 rounded-xl shadow border border-gray-200/50 dark:border-gray-700/50 w-full transition-transform hover:scale-105 focus:scale-105 cursor-pointer">
-          <img src="https://www.cloudflare.com/favicon.ico" alt="Cloudflare" class="h-10 mb-2" />
-          <span class="font-semibold">Cloudflare</span>
-        </a>
-        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center bg-white/80 dark:bg-gray-800/80 p-4 rounded-xl shadow border border-gray-200/50 dark:border-gray-700/50 w-full transition-transform hover:scale-105 focus:scale-105 cursor-pointer">
-          <img src="https://icon.icepanel.io/Technology/svg/GitHub.svg" alt="Github" class="h-10 mb-2" />
-          <span class="font-semibold">Github</span>
-        </a>
-        <a href="https://tailscale.com/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center bg-white/80 dark:bg-gray-800/80 p-4 rounded-xl shadow border border-gray-200/50 dark:border-gray-700/50 w-full transition-transform hover:scale-105 focus:scale-105 cursor-pointer">
-          <img src="https://tailscale.com/favicon.ico" alt="Tailscale" class="h-10 mb-2" />
-          <span class="font-semibold">Tailscale</span>
-        </a>
-        <a href="https://zerossl.com/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center bg-white/80 dark:bg-gray-800/80 p-4 rounded-xl shadow border border-gray-200/50 dark:border-gray-700/50 w-full transition-transform hover:scale-105 focus:scale-105 cursor-pointer">
-          <img src="https://help.zerossl.com/hc/theming_assets/01HZKYW5S8J4F427S7AKQR697X" alt="ZeroSSL" class="h-10 mb-2" />
-          <span class="font-semibold">ZeroSSL</span>
-        </a>
+  <!-- Core Technologies Section -->
+  <div class="bg-[var(--color-palette-dark)] border-2 border-[var(--color-palette-faded-slate)] rounded-3xl p-10 shadow-2xl hover:border-[var(--color-palette-emerald)] transition-all duration-500">
+    <div class="text-center mb-10">
+      <div class="flex items-center justify-center gap-3 mb-4">
+        <div class="w-2 h-2 bg-[var(--color-palette-pink)] rounded-full"></div>
+        <h2 class="text-4xl font-black text-[var(--color-palette-light)]">Core Technologies</h2>
+        <div class="w-2 h-2 bg-[var(--color-palette-emerald)] rounded-full"></div>
       </div>
+      <div class="w-32 h-1 bg-[var(--color-palette-emerald)] mx-auto rounded-full"></div>
+    </div>
+    
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <a href="https://cloudstack.apache.org/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center bg-[var(--color-palette-faded-slate)] border border-2 border-[var(--color-palette-pink)] p-6 rounded-2xl shadow-lg transform hover:scale-110 hover:-translate-y-2 transition-all duration-400 cursor-pointer">
+        <div class="w-16 h-16 mb-4 flex items-center justify-center">
+          <img src="https://cdn.worldvectorlogo.com/logos/apache-cloudstack.svg" alt="Apache Cloudstack" class="h-10" />
+        </div>
+        <span class="font-bold text-[var(--color-palette-light)]">Apache CloudStack</span>
+      </a>
+      
+      <a href="https://www.oracle.com/cloud/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center bg-[var(--color-palette-faded-slate)] border border-2 border-[var(--color-palette-pink)] p-6 rounded-2xl shadow-lg transform hover:scale-105 hover:-translate-y-2 transition-all duration-400 cursor-pointer">
+        <div class="w-16 h-16 mb-4 flex items-center justify-center">
+          <img src="https://brandlogos.net/wp-content/uploads/2021/10/oracle-logo-symbol-vector-512x512.png" alt="OCI" class="h-10" />
+        </div>
+        <span class="font-bold text-[var(--color-palette-light)]">Oracle Cloud</span>
+      </a>
+      
+      <a href="https://kubernetes.io/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center bg-[var(--color-palette-faded-slate)] border border-2 border-[var(--color-palette-pink)] p-6 rounded-2xl shadow-lg transform hover:scale-105 hover:-translate-y-2 transition-all duration-400 cursor-pointer">
+        <div class="w-16 h-16 mb-4 flex items-center justify-center">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/723px-Kubernetes_logo_without_workmark.svg.png" alt="Kubernetes" class="h-10" />
+        </div>
+        <span class="font-bold text-[var(--color-palette-light)]">Kubernetes</span>
+      </a>
+      
+      <a href="https://www.truenas.com/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center bg-[var(--color-palette-faded-slate)] border border-2 border-[var(--color-palette-pink)] p-6 rounded-2xl shadow-lg transform hover:scale-105 hover:-translate-y-2 transition-all duration-400 cursor-pointer">
+        <div class="w-16 h-16 mb-4 flex items-center justify-center">
+          <img src="https://www.osboxes.org/wp-content/uploads/2022/02/truenas-logo.png" alt="TrueNAS Scale" class="h-10" />
+        </div>
+        <span class="font-bold text-[var(--color-palette-light)]">TrueNAS Scale</span>
+      </a>
+      
+      <a href="https://www.cloudflare.com/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center bg-[var(--color-palette-faded-slate)] border border-2 border-[var(--color-palette-pink)] p-6 rounded-2xl shadow-lg transform hover:scale-105 hover:-translate-y-2 transition-all duration-400 cursor-pointer">
+        <div class="w-16 h-16 mb-4 flex items-center justify-center">
+          <img src="https://www.cloudflare.com/favicon.ico" alt="Cloudflare" class="h-10" />
+        </div>
+        <span class="font-bold text-[var(--color-palette-light)]">Cloudflare</span>
+      </a>
+      
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center bg-[var(--color-palette-faded-slate)] border border-2 border-[var(--color-palette-pink)] p-6 rounded-2xl shadow-lg transform hover:scale-105 hover:-translate-y-2 transition-all duration-400 cursor-pointer">
+        <div class="w-16 h-16 mb-4 flex items-center justify-center">
+          <img src="https://icon.icepanel.io/Technology/svg/GitHub.svg" alt="Github" class="h-10" />
+        </div>
+        <span class="font-bold text-[var(--color-palette-light)]">GitHub</span>
+      </a>
+      
+      <a href="https://tailscale.com/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center bg-[var(--color-palette-faded-slate)] border border-2 border-[var(--color-palette-pink)] p-6 rounded-2xl shadow-lg transform hover:scale-105 hover:-translate-y-2 transition-all duration-400 cursor-pointer">
+        <div class="w-16 h-16 mb-4 flex items-center justify-center">
+          <img src="/tailscale.png" alt="Tailscale" class="h-10" />
+        </div>
+        <span class="font-bold text-[var(--color-palette-light)]">Tailscale</span>
+      </a>
+      
+      <a href="https://zerossl.com/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center bg-[var(--color-palette-faded-slate)] border border-2 border-[var(--color-palette-pink)] p-6 rounded-2xl shadow-lg transform hover:scale-105 hover:-translate-y-2 transition-all duration-400 cursor-pointer">
+        <div class="w-16 h-16 mb-4 flex items-center justify-center">
+          <img src="https://help.zerossl.com/hc/theming_assets/01HZKYW5S8J4F427S7AKQR697X" alt="ZeroSSL" class="h-10" />
+        </div>
+        <span class="font-bold text-[var(--color-palette-light)]">ZeroSSL</span>
+      </a>
     </div>
   </div>
 </div>

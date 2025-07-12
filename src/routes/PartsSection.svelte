@@ -61,19 +61,17 @@
 </script>
 
 <div class="space-y-8">
-  <div class="bg-gradient-to-r from-amber-600 via-orange-600 to-red-600 text-white p-8 rounded-2xl shadow-xl relative overflow-hidden">
-    <div class="absolute top-0 left-0 w-full h-full bg-white/5 backdrop-blur-sm opacity-20 z-0"></div>
-    <div class="absolute -top-24 -right-24 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+  <div class="bg-(--color-palette-emerald) text-(--color-palette-light) p-8 rounded-2xl shadow-xl relative overflow-hidden">
     <div class="relative z-10">
       <h2 class="text-4xl font-extrabold mb-2 drop-shadow-md">Hardware Parts List</h2>
-      <p class="text-lg opacity-90">Components that make up this impressive homelab setup</p>
+      <p class="text-lg">Components that make up this impressive homelab setup</p>
     </div>
   </div>
   <div class="flex gap-2 flex-wrap">
     {#each ['all', 'phase1', 'phase2', 'phase3'] as phase}
       <button
         onclick={() => selectedPhase = phase}
-        class="px-6 py-2.5 rounded-xl text-sm font-medium shadow-md transition-all duration-300 transform hover:scale-105 {selectedPhase === phase ? 'bg-gradient-to-r from-amber-500 to-orange-600 text-white' : 'bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 border border-gray-200 dark:border-gray-700'}"
+        class="px-6 py-2.5 rounded-xl text-sm font-medium shadow-md transition-all duration-300 transform hover:scale-105 {selectedPhase === phase ? 'bg-(--color-palette-pink) text-(--color-palette-light)' : 'bg-(--color-palette-light) text-(--color-palette-emerald) border border-(--color-palette-emerald)'}"
       >
         {phase === 'all' ? 'Complete Build' : `Phase ${phase.slice(-1)}`}
       </button>
@@ -81,30 +79,30 @@
   </div>
   <div class="space-y-6">
     {#each phases as phase, i}
-      <div class="bg-white/90 dark:bg-gray-800/90 rounded-xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-6 backdrop-blur-sm transform hover:scale-[1.01] transition-all duration-300" style="transition-delay: {i * 100}ms">
+      <div class="bg-(--color-palette-light) rounded-xl shadow-xl border border-(--color-palette-emerald) p-6 transform hover:scale-[1.01] transition-all duration-300" style="transition-delay: {i * 100}ms">
         <div class="flex justify-between items-center mb-6">
           <div>
-            <h3 class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-700 to-orange-700 dark:from-amber-300 dark:to-orange-300">{phase.title}</h3>
-            <p class="text-gray-600 dark:text-gray-400">{phase.timeline}</p>
+            <h3 class="text-xl font-bold text-(--color-palette-emerald)">{phase.title}</h3>
+            <p class="text-(--color-palette-emerald)">{phase.timeline}</p>
           </div>
-          <div class="text-xl font-bold text-amber-600 dark:text-amber-400">£{phase.cost.toLocaleString()}</div>
+          <div class="text-xl font-bold text-(--color-palette-emerald)">£{phase.cost.toLocaleString()}</div>
         </div>
         <div class="space-y-4">
           {#each phase.items as item, j}
-            <div class="bg-gradient-to-br from-amber-50 to-orange-50 dark:from-gray-700/50 dark:to-gray-700/80 rounded-lg p-4 border-l-4 border-amber-500 transform hover:translate-x-1 transition-all duration-200" style="transition-delay: {j * 50}ms">
+            <div class="bg-(--color-palette-faded-pink) rounded-lg p-4 border-l-4 border-(--color-palette-pink) transform hover:translate-x-1 transition-all duration-200" style="transition-delay: {j * 50}ms">
               <div class="flex justify-between items-start mb-2">
-                <h4 class="font-bold text-gray-900 dark:text-white">{item.name}</h4>
-                <span class="text-lg font-bold text-amber-600 dark:text-amber-400">£{item.price}</span>
+                <h4 class="font-bold text-(--color-palette-emerald)">{item.name}</h4>
+                <span class="text-lg font-bold text-(--color-palette-pink)">£{item.price}</span>
               </div>
-              <p class="text-sm text-gray-600 dark:text-gray-400">{item.specs}</p>
+              <p class="text-sm text-(--color-palette-emerald)">{item.specs}</p>
             </div>
           {/each}
         </div>
       </div>
     {/each}
   </div>
-  <div class="bg-white/80 dark:bg-gray-800/80 p-6 rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 backdrop-blur-sm">
-    <div class="text-2xl font-bold text-amber-700 dark:text-amber-300 text-center mt-4">
+  <div class="bg-(--color-palette-light) p-6 rounded-xl shadow-lg border border-(--color-palette-emerald)">
+    <div class="text-2xl font-bold text-(--color-palette-emerald) text-center mt-4">
       Total Investment: £{totalCost.toLocaleString()}
     </div>
   </div>
