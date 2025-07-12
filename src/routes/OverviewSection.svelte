@@ -21,7 +21,7 @@
         </div>
         <div>
           <h1 class="text-6xl font-black mb-2 tracking-tight">Complete Home Lab</h1>
-          <div class="w-24 h-1 bg-[var(--color-palette-emerald)] rounded-full"></div>
+          <div class="w-24 h-1 bg-[var(--color-palette-pink)] rounded-full"></div>
         </div>
       </div>
       <p class="text-2xl font-light leading-relaxed max-w-4xl">Enterprise-Grade Infrastructure with Kubernetes, CloudStack, AI/ML, and Zero-Trust Security</p>
