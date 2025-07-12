@@ -23,7 +23,7 @@
 <div class="min-h-screen" style="background-color: var(--color-palette-dark);">
   <div class="flex">
     <!-- Sidebar -->
-    <div class="w-64 shadow-xl min-h-screen relative z-10 border-r-2 border-[var(--color-palette-emerald)]" style="background-color: var(--color-palette-faded-slate);">
+    <div class="w-64 shadow-xl fixed left-0 top-0 h-screen z-10 border-r-2 border-[var(--color-palette-faded-emerald)]" style="background-color: var(--color-palette-faded-slate);">
 
       
       <div class="p-6 border-r border-(--color-palette-faded-emerald) bg-(--color-palette-dark)">
@@ -70,7 +70,7 @@
     </div>
 
     <!-- Main Content -->
-    <div class="flex-1 p-8">
+    <div class="flex-1 p-8 ml-64">
       {#if activeSection === 'overview'}
         <OverviewSection />
       {:else if activeSection === 'architecture'}
@@ -84,4 +84,11 @@
       {/if}
     </div>
   </div>
+  
+  <!-- Footer -->
+  <footer class="mt-12 pt-8 pb-8 border-t text-center ml-64" style="border-color: var(--color-palette-faded-slate);">
+    <p class="opacity-80" style="color: var(--color-palette-light);">
+      Daniel's Homelab • Built with SvelteKit & Tailwind CSS
+    </p>
+  </footer>
 </div>
