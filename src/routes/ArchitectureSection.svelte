@@ -115,7 +115,7 @@
   <!-- Enhanced Architecture Diagram -->
   <div class="flex justify-center">
     <!-- Explanation Text Box -->
-    <div class="bg-(--color-palette-light) rounded-2xl p-8 shadow-lg border border-(--color-palette-emerald) max-w-9xl w-full transform hover:scale-[1.01] transition-all duration-300 relative overflow-hidden group">
+    <div class="bg-(--color-palette-faded-slate) rounded-2xl p-8 shadow-lg border border-(--color-palette-emerald) max-w-9xl w-full transform hover:scale-[1.01] transition-all duration-300 relative overflow-hidden group">
       
       <div class="absolute -top-16 -right-16 w-32 h-32 bg-(--color-palette-emerald) rounded-full group-hover:bg-(--color-palette-emerald) transition-colors duration-300"></div>
       <div class="flex items-center gap-3 mb-4 relative z-10">
@@ -148,7 +148,7 @@
       <div class="absolute -inset-1 border-4 border-dashed border-(--color-palette-emerald) rounded-2xl animate-pulse transition-opacity duration-300"></div>
       
       <div class="flex flex-col items-center mb-10 relative z-10">
-        <img src="https://tailscale.com/favicon.ico" alt="Tailscale" class="w-20 h-20 mb-3 transform group-hover:scale-110 transition-transform duration-300" />
+        <img src="/tailscale.png" alt="Tailscale" class="w-20 h-20 mb-3 transform group-hover:scale-110 transition-transform duration-300" />
         <h2 class="text-3xl font-bold text-(--color-palette-emerald)">Tailscale VPN Overlay Network</h2>
       </div>
       <div class="flex flex-col md:flex-row gap-24 w-full justify-center relative z-10"> <!-- gap-24 for more space -->
