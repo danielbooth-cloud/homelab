@@ -11,7 +11,7 @@
           'CPU': 'EPYC 7302P (16c/32t)',
           'RAM': '128GB ECC',
           'Storage': '1TB NVMe x2',
-          'GPU': 'RTX 4060 Ti 16GB'
+          'GPU': 'RTX 3090 24GB'
         }
       },
       {
