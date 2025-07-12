@@ -31,7 +31,7 @@
   <div class="bg-[var(--color-palette-dark)] rounded-2xl p-8 shadow-lg border-2 border-[var(--color-palette-emerald)] max-w-9xl w-full transform hover:scale-[1.005] transition-all duration-300 relative overflow-hidden group">
       
       <div class="flex items-center gap-3 mb-4 relative z-10">
-        <div class="bg-[var(--color-palette-faded-emerald)] text-[var(--color-palette-light)] p-2 rounded-lg shadow-lg transform group-hover:scale-110 transition-transform duration-300">
+        <div class="bg-[var(--color-palette-faded-purple)] text-[var(--color-palette-light)] p-2 rounded-lg shadow-lg transform group-hover:scale-110 transition-transform duration-300">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png" alt="GitHub" class="w-6 h-6" />
         </div>
         <h3 class="text-xl font-bold text-[var(--color-palette-emerald)]">GitOps workflow for deploying new environments</h3>
@@ -50,12 +50,12 @@
       </div>
     </div>
 
-  <div class="bg-[var(--color-palette-dark)] rounded-xl p-8 shadow-lg border-2 border-[var(--color-palette-emerald)] transform hover:scale-[1.01] transition-all duration-300 relative overflow-hidden group">
+  <div class="bg-[var(--color-palette-faded-slate)] rounded-xl p-8 shadow-lg border-2 border-[var(--color-palette-emerald)] transform hover:scale-[1.01] transition-all duration-300 relative overflow-hidden group">
     
     <div class="flex flex-col items-center space-y-8 relative z-10">
       <!-- Top: Atmos Configuration -->
-      <div class="flex items-center space-x-4 bg-[var(--color-palette-faded-slate)] text-[var(--color-palette-emerald)] px-6 py-4 rounded-lg font-mono text-sm shadow-lg transform hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer group/command border border-[var(--color-palette-emerald)]">
-        <div class="w-3 h-3 bg-[var(--color-palette-emerald)] rounded-full animate-pulse group-hover/command:animate-bounce"></div>
+      <div class="flex items-center space-x-4 bg-[var(--color-palette-faded-purple)] text-[var(--color-palette-emerald)] px-6 py-4 rounded-lg font-mono text-sm shadow-lg transform hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer group/command border-3 border-[var(--color-palette-emerald)]">
+        <div class="w-3 h-3 bg-[var(--color-palette-emerald)] rounded-full animate-pulse"></div>
         <span class="font-bold">Satmos k8s up -e ENV</span>
         <div class="text-xs transition-colors duration-300">Single-command bootstrap</div>
       </div>
@@ -68,7 +68,7 @@
 
       <!-- Middle: Terraform Infrastructure Circle -->
       <div class="relative group/center">
-        <div class="w-70 h-70 rounded-full border-4 border-[var(--color-palette-emerald)] bg-[var(--color-palette-faded-slate)] flex flex-col items-center justify-center shadow-lg transform group-hover/center:scale-[1.05] group-hover/center:shadow-2xl group-hover/center:border-[var(--color-palette-pink)] transition-all duration-500 cursor-pointer">
+        <div class="w-70 h-70 rounded-full border-4 border-[var(--color-palette-emerald)] bg-[var(--color-palette-dark)] flex flex-col items-center justify-center shadow-lg transform group-hover/center:scale-[1.05] group-hover/center:shadow-2xl group-hover/center:border-[var(--color-palette-pink)] transition-all duration-500 cursor-pointer">
           
           <div class="text-center space-y-2 relative z-10">
             <div class="w-12 h-12 bg-[var(--color-palette-faded-emerald)] group-hover/center:bg-[var(--color-palette-emerald)] rounded-lg flex items-center justify-center mx-auto transform group-hover/center:scale-110 transition-all duration-300]">
@@ -108,7 +108,7 @@
       <!-- Bottom: Kubernetes Clusters -->
       <div class="flex justify-between w-full max-w-4xl space-x-8">
         <!-- Test Cluster -->
-        <div class="flex-1 bg-[var(--color-palette-faded-emerald)] border-2 border-[var(--color-palette-emerald)] rounded-xl p-6 transform hover:scale-[1.02] hover:shadow-xl hover:border-[var(--color-palette-emerald)] transition-all duration-300 cursor-pointer group/test relative overflow-hidden">
+        <div class="flex-1 bg-[var(--color-palette-faded-purple)] border-2 border-[var(--color-palette-emerald)] rounded-xl p-6 transform hover:scale-[1.02] hover:shadow-xl hover:border-[var(--color-palette-emerald)] transition-all duration-300 cursor-pointer group/test relative overflow-hidden">
           <div class="text-center space-y-4 relative z-10">
             <div class="w-12 h-12 items-center justify-center mx-auto transform group-hover/test:scale-110 group-hover/test:rotate-12 transition-all duration-300">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/723px-Kubernetes_logo_without_workmark.svg.png" alt="Kubernetes" class="h-12 mb-2" />
@@ -217,7 +217,7 @@
             <ul class="space-y-2 text-sm">
               <li class="flex items-start gap-2 transform hover:translate-x-1 transition-transform duration-200">
                 <span class="w-2 h-2 bg-[var(--color-palette-emerald)] rounded-full mt-2 flex-shrink-0"></span>
-                <span>Single command (<code class="bg-[var(--color-palette-faded-emerald)] px-1 rounded transition-colors duration-200">atmos k8s up -e ENV</code>) provisions entire Kubernetes clusters</span>
+                <span>Single command (<code class="bg-[var(--color-palette-faded-purple)] px-1 rounded transition-colors duration-200">atmos k8s up -e ENV</code>) provisions entire Kubernetes clusters</span>
               </li>
               <li class="flex items-start gap-2 transform hover:translate-x-1 transition-transform duration-200">
                 <span class="w-2 h-2 bg-[var(--color-palette-emerald)] rounded-full mt-2 flex-shrink-0"></span>
@@ -258,7 +258,7 @@
                 <strong class="text-[var(--color-palette-pink)]">Self-Service Environments:</strong> New environments are created and configured with a single command
               </div>
             </div>
-            <div class="flex items-start gap-2 transform hover:scale-[1.02] hover:translate-x-0.5 transition-all duration-300 p-2 rounded-lg bg-[var(--color-palette-faded-slate)] hover:bg-[var(--color-palette-faded-emerald)] border-l-2 border-[var(--color-palette-emerald)] group/advantage">
+            <div class="flex items-start gap-2 transform hover:scale-[1.02] hover:translate-x-0.5 transition-all duration-300 p-2 rounded-lg bg-[var(--color-palette-faded-slate)] hover:bg-[var(--color-palette-faded-purple)] border-l-2 border-[var(--color-palette-emerald)] group/advantage">
               <span class="text-[var(--color-palette-pink)] font-bold text-xl transform group-hover/advantage:scale-[1.1] transition-transform duration-300">⚡</span>
               <div>
                 <strong class="text-[var(--color-palette-pink)]">Rapid Environment Creation:</strong> New clusters deployed in minutes, not hours
