@@ -15,13 +15,13 @@
 </script>
 
 <div class="space-y-8">
-  <div class="bg-[var(--color-palette-dark)] border-2 border-[var(--color-palette-emerald)] text-[var(--color-palette-light)] p-8 rounded-3xl shadow-2xl transform hover:scale-[1.005] transition-all duration-500 relative overflow-hidden">
+  <div class="bg-[var(--color-palette-dark)] border-2 border-[var(--color-palette-pink)] text-[var(--color-palette-light)] p-8 rounded-3xl shadow-2xl transform hover:scale-[1.005] transition-all duration-500 relative overflow-hidden">
     <div class="absolute top-4 right-4 w-12 h-12 bg-[var(--color-palette-faded-emerald)] rounded-full opacity-60"></div>
     <div class="absolute bottom-4 left-4 w-8 h-8 bg-[var(--color-palette-faded-pink)] rounded-full opacity-40"></div>
     <div class="relative z-10">
       <div class="mb-4">
         <h2 class="text-4xl font-black mb-2 tracking-tight">Technology Stack</h2>
-        <div class="w-20 h-1 bg-[var(--color-palette-emerald)] rounded-full"></div>
+        <div class="w-20 h-1 bg-[var(--color-palette-pink)] rounded-full"></div>
       </div>
       <p class="text-lg font-light leading-relaxed">Technologies and tools powering this homelab infrastructure</p>
     </div>
