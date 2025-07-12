@@ -88,8 +88,8 @@
         <div class="absolute -top-8 -right-8 w-24 h-24 bg-[var(--color-palette-faded-emerald)] rounded-full opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
         <div class="flex justify-between items-center mb-6 relative z-10">
           <div>
-            <h3 class="text-2xl font-bold text-[var(--color-palette-emerald)] group-hover:text-[var(--color-palette-pink)] transition-colors duration-300">{phase.title}</h3>
-            <div class="w-16 h-0.5 bg-[var(--color-palette-emerald)] mt-1 group-hover:bg-[var(--color-palette-pink)] transition-colors duration-300"></div>
+            <h3 class="text-2xl font-bold text-[var(--color-palette-emerald)]">{phase.title}</h3>
+            <div class="w-16 h-0.5 bg-[var(--color-palette-emerald)] mt-1"></div>
           </div>
           <div class="text-2xl font-bold text-[var(--color-palette-pink)] bg-[var(--color-palette-faded-pink)] px-4 py-2 rounded-lg shadow-md">£{phase.cost.toLocaleString()}</div>
         </div>
@@ -116,7 +116,7 @@
     <div class="absolute bottom-8 left-8 w-12 h-12 bg-[var(--color-palette-faded-pink)] rounded-full opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
     <div class="absolute bottom-16 right-20 w-5 h-5 bg-[var(--color-palette-emerald)] rounded-full opacity-45 group-hover:scale-110 transition-transform duration-300"></div>
     <div class="relative z-10 text-center">
-      <div class="text-3xl font-black text-[var(--color-palette-emerald)] mb-2 group-hover:text-[var(--color-palette-pink)] transition-colors duration-300">
+      <div class="text-3xl font-black text-[var(--color-palette-emerald)] mb-2">
         Total Investment
       </div>
       <div class="text-4xl font-black text-[var(--color-palette-pink)] bg-[var(--color-palette-faded-pink)] px-6 py-3 rounded-xl shadow-lg inline-block transform group-hover:scale-105 transition-transform duration-300">
