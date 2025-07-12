@@ -64,7 +64,7 @@
           </div>
           <div class="flex items-start gap-3 text-[var(--color-palette-light)] group-hover:translate-x-1 transition-transform duration-300">
             <div class="w-2 h-2 bg-[var(--color-palette-pink)] rounded-full mt-2 flex-shrink-0"></div>
-            <span class="font-medium">IP Range: <code class="bg-[var(--color-palette-faded-pink)] px-2 py-1 rounded text-sm">100.64.0.0/10</code></span>
+            <span class="font-medium">Magic DNS: <code class="bg-[var(--color-palette-faded-pink)] px-2 py-1 rounded text-sm">*.ts.net</code> automatic service discovery</span>
           </div>
           <div class="flex items-start gap-3 text-[var(--color-palette-light)] group-hover:translate-x-1 transition-transform duration-300">
             <div class="w-2 h-2 bg-[var(--color-palette-pink)] rounded-full mt-2 flex-shrink-0"></div>
