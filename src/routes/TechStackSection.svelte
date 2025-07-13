@@ -29,7 +29,7 @@
 
   <!-- Bootstrap Environment Diagram -->
   <div class="bg-[var(--color-palette-dark)] rounded-2xl p-8 shadow-lg border-2 border-[var(--color-palette-emerald)] max-w-9xl w-full transform hover:scale-[1.005] transition-all duration-300 relative overflow-hidden group">
-      
+
       <div class="flex items-center gap-3 mb-4 relative z-10">
         <div class="bg-[var(--color-palette-faded-purple)] text-[var(--color-palette-light)] p-2 rounded-lg shadow-lg transform group-hover:scale-110 transition-transform duration-300">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png" alt="GitHub" class="w-6 h-6" />
@@ -51,7 +51,7 @@
     </div>
 
   <div class="bg-[var(--color-palette-faded-slate)] rounded-xl p-8 shadow-lg border-2 border-[var(--color-palette-emerald)] transform hover:scale-[1.01] transition-all duration-300 relative overflow-hidden group">
-    
+
     <div class="flex flex-col items-center space-y-8 relative z-10">
       <!-- Top: Atmos Configuration -->
       <div class="flex items-center space-x-4 bg-[var(--color-palette-faded-purple)] text-[var(--color-palette-emerald)] px-6 py-4 rounded-lg font-mono text-sm shadow-lg transform hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer group/command border-3 border-[var(--color-palette-emerald)]">
@@ -69,7 +69,7 @@
       <!-- Middle: Terraform Infrastructure Circle -->
       <div class="relative group/center">
         <div class="w-70 h-70 rounded-full border-4 border-[var(--color-palette-emerald)] bg-[var(--color-palette-dark)] flex flex-col items-center justify-center shadow-lg transform group-hover/center:scale-[1.05] group-hover/center:shadow-2xl group-hover/center:border-[var(--color-palette-pink)] transition-all duration-500 cursor-pointer">
-          
+
           <div class="text-center space-y-2 relative z-10">
             <div class="w-12 h-12 bg-[var(--color-palette-faded-emerald)] group-hover/center:bg-[var(--color-palette-emerald)] rounded-lg flex items-center justify-center mx-auto transform group-hover/center:scale-110 transition-all duration-300]">
               <img src="https://icon.icepanel.io/Technology/svg/GitHub.svg" alt="GitHub" class="w-8 h-8" />
@@ -170,7 +170,7 @@
       <div class="flex flex-col items-center space-y-4 relative group/gitops">
         <div class="w-12 h-12 bg-[var(--color-palette-light)] rounded-full flex items-center justify-center relative transform group-hover/gitops:scale-[1.05] group-hover/gitops:shadow-xl transition-all duration-300 cursor-pointer">
           <img src="https://icon.icepanel.io/Technology/svg/GitHub.svg" alt="GitHub" class="w-12 h-12 relative z-10" />
-          
+
           <!-- Arrows from GitOps to Clusters (Fixed z-index and removed interactivity) -->
           <div class="absolute -top-8 -left-32 transform rotate-45 z-20">
             <div class="flex items-center">
@@ -258,7 +258,7 @@
                 <strong class="text-[var(--color-palette-pink)]">Self-Service Environments:</strong> New environments are created and configured with a single command
               </div>
             </div>
-            <div class="flex items-start gap-2 transform hover:scale-[1.02] hover:translate-x-0.5 transition-all duration-300 p-2 rounded-lg bg-[var(--color-palette-faded-slate)] hover:bg-[var(--color-palette-faded-purple)] border-l-2 border-[var(--color-palette-emerald)] group/advantage">
+            <div class="flex items-start gap-2 transform hover:scale-[1.02] hover:translate-x-0.5 transition-all duration-300 p-2 rounded-lg bg-[var(--color-palette-faded-slate)] hover:bg-[var(--color-palette-faded-emerald)] border-l-2 border-[var(--color-palette-emerald)] group/advantage">
               <span class="text-[var(--color-palette-pink)] font-bold text-xl transform group-hover/advantage:scale-[1.1] transition-transform duration-300">⚡</span>
               <div>
                 <strong class="text-[var(--color-palette-pink)]">Rapid Environment Creation:</strong> New clusters deployed in minutes, not hours
@@ -278,8 +278,8 @@
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     {#each Object.entries(techStack) as [category, technologies], i}
-      <div 
-        class="bg-[var(--color-palette-faded-slate)] rounded-xl p-6 shadow-lg border border-[var(--color-palette-emerald)] transform hover:scale-[1.015] hover:shadow-xl transition-all duration-300" 
+      <div
+        class="bg-[var(--color-palette-faded-slate)] rounded-xl p-6 shadow-lg border border-[var(--color-palette-emerald)] transform hover:scale-[1.015] hover:shadow-xl transition-all duration-300"
         style="transition-delay: {i * 50}ms"
       >
         <h3 class="text-xl font-bold text-[var(--color-palette-light)] mb-4 border-b border-[var(--color-palette-emerald)] pb-2">
@@ -287,8 +287,8 @@
         </h3>
         <div class="space-y-2">
           {#each technologies as tech, j}
-            <div 
-              class="flex items-center gap-2 text-sm transform hover:translate-x-1 transition-transform duration-200" 
+            <div
+              class="flex items-center gap-2 text-sm transform hover:translate-x-1 transition-transform duration-200"
               style="transition-delay: {j * 30}ms"
             >
               <ChevronRight class="w-3 h-3 text-[var(--color-palette-emerald)]" />

@@ -39,9 +39,9 @@
   ];
 
   const hostedServices = [
-    'AdGuard', 'Chatbox AI', 'Bitwarden', 'DPaste', 'Homepage', 'LanguageTool', 
-    'LinkAce', 'Maybe', 'Minecraft', 'Nextcloud', 'Outline', 'OwnCloud', 
-    'Coolify', 'Ghost', 'Dependency-Track', 'Locust', 'SonarQube', 
+    'AdGuard', 'Chatbox AI', 'Bitwarden', 'DPaste', 'Homepage', 'LanguageTool',
+    'LinkAce', 'Maybe', 'Ntfy', 'Nextcloud', 'Outline', 'OwnCloud',
+    'Dokku', 'Ghost', 'Dependency-Track', 'Locust', 'SonarQube',
     'Kubechecks', 'Jira', 'Harbor', 'OAuth2-Proxy', 'Descheduler', 'Atlantis',
     'Chaos Mesh'
   ];
@@ -61,8 +61,8 @@
   </div>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     {#each workloads as workload, i}
-      <div 
-        class="bg-[var(--color-palette-faded-slate)] rounded-xl p-6 shadow-lg border border-[var(--color-palette-emerald)] transform hover:scale-[1.015] hover:shadow-xl transition-all duration-300 relative overflow-hidden group" 
+      <div
+        class="bg-[var(--color-palette-faded-slate)] rounded-xl p-6 shadow-lg border border-[var(--color-palette-emerald)] transform hover:scale-[1.015] hover:shadow-xl transition-all duration-300 relative overflow-hidden group"
         style="transition-delay: {i * 50}ms"
       >
         <div class="flex items-center gap-3 mb-4 relative z-10">
@@ -75,8 +75,8 @@
         </div>
         <div class="space-y-2 relative z-10">
           {#each workload.items as item, j}
-            <div 
-              class="flex items-center gap-2 text-sm transform hover:translate-x-1 transition-transform duration-200" 
+            <div
+              class="flex items-center gap-2 text-sm transform hover:translate-x-1 transition-transform duration-200"
               style="transition-delay: {j * 30}ms"
             >
               <div class="w-2 h-2 bg-[var(--color-palette-emerald)] rounded-full flex-shrink-0"></div>
@@ -113,7 +113,7 @@
       </div>
     </div>
   </div>
-  
+
   <!-- Hosted Services Section -->
   <div class="bg-[var(--color-palette-dark)] border-2 border-[var(--color-palette-faded-slate)] rounded-3xl p-10 shadow-2xl hover:border-[var(--color-palette-pink)] transition-all duration-500 relative overflow-hidden">
     <div class="absolute top-0 right-0 w-32 h-32 bg-[var(--color-palette-faded-pink)] rounded-full -translate-y-16 translate-x-16 opacity-20"></div>
@@ -128,10 +128,10 @@
           <p class="text-[var(--color-palette-light)] mt-2">{hostedServices.length}+ self-hosted applications running in the homelab</p>
         </div>
       </div>
-      
+
       <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
         {#each hostedServices as service, i}
-          <div 
+          <div
             class="bg-[var(--color-palette-faded-slate)] p-4 rounded-lg shadow-md border border-[var(--color-palette-pink)] transform hover:scale-105 hover:shadow-lg hover:border-[var(--color-palette-emerald)] transition-all duration-300 group cursor-pointer"
             style="transition-delay: {i * 25}ms"
           >

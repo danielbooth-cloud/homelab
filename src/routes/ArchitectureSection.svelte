@@ -116,12 +116,12 @@
       <p class="text-lg font-light leading-relaxed">Enterprise-grade components powering my homelab environment</p>
     </div>
   </div>
-  
+
   <!-- Enhanced Architecture Diagram -->
   <div class="flex justify-center">
     <!-- Explanation Text Box -->
     <div class="bg-[var(--color-palette-dark)] rounded-2xl p-8 shadow-lg border-2 border-[var(--color-palette-emerald)] max-w-9xl w-full transform hover:scale-[1.01] transition-all duration-300 relative overflow-hidden group">
-      
+
       <div class="absolute -top-16 -right-16 w-32 h-32 bg-[var(--color-palette-faded-emerald)] rounded-full opacity-60"></div>
       <div class="flex items-center gap-3 mb-4 relative z-10">
         <div class="w-14 h-14 bg-[var(--color-palette-pink)] text-[var(--color-palette-light)] rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
@@ -154,14 +154,14 @@
     <div class="bg-[var(--color-palette-faded-slate)] rounded-3xl p-10 max-w-7xl w-full flex flex-col items-center relative transform hover:scale-[1.01] transition-all duration-300 group shadow-2xl">
       <!-- Animated Tailscale network border with glow/pulse -->
       <div class="absolute -inset-1 border-4 border-dashed border-[var(--color-palette-emerald)] rounded-2xl animate-pulse transition-opacity duration-300"></div>
-      
+
       <div class="flex flex-col items-center mb-10 relative z-10">
         <img src="/tailscale.png" alt="Tailscale" class="w-20 h-20 mb-3 transform group-hover:scale-110 transition-transform duration-300" />
         <h2 class="text-3xl font-bold text-[var(--color-palette-emerald)]">Tailscale VPN Overlay Network</h2>
       </div>
       <div class="flex flex-col md:flex-row gap-24 w-full justify-center relative z-10"> <!-- gap-24 for more space -->
         <div class="flex-1 bg-[var(--color-palette-dark)] rounded-2xl border-2 border-[var(--color-palette-emerald)] p-10 flex flex-col items-center shadow-lg min-w-[320px] max-w-[400px] transform hover:scale-[1.03] hover:shadow-xl transition-all duration-300 relative overflow-hidden group/box">
-          
+
           <div class="absolute -bottom-16 -right-16 w-32 h-32 bg-[var(--color-palette-faded-emerald)] rounded-full opacity-60"></div>
           <span class="text-xl font-semibold text-[var(--color-palette-emerald)] mb-4 relative z-10">🏠 Homelab Cluster</span>
           <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes" class="w-20 h-20 mb-4 transform group-hover/box:scale-110 transition-transform duration-300 relative z-10" />
@@ -169,7 +169,7 @@
           <img src="/talos.png" alt="Talos" class="w-16 h-16 mb-4 transform group-hover/box:scale-110 transition-transform duration-300 relative z-10" />
           <span class="text-[var(--color-palette-pink)] font-medium text-lg relative z-10">Talos Worker Nodes</span>
         </div>
-        
+
         <!-- SVG line positioned between the boxes -->
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:scale-110 transition-transform duration-300 z-20" style="width: 120px; height: 4px; margin-top: 20px;">
           <svg width="120" height="4" style="position: absolute; top: 0; left: 0;">
@@ -178,9 +178,9 @@
             </line>
           </svg>
         </div>
-        
+
         <div class="flex-1 bg-[var(--color-palette-dark)] rounded-2xl border-2 border-[var(--color-palette-pink)] p-10 flex flex-col items-center shadow-lg min-w-[320px] max-w-[400px] transform hover:scale-[1.03] hover:shadow-xl transition-all duration-300 relative overflow-hidden group/box">
-          
+
           <div class="absolute -bottom-16 -right-16 w-32 h-32 bg-[var(--color-palette-faded-pink)] rounded-full opacity-60"></div>
           <span class="text-xl font-semibold text-[var(--color-palette-pink)] mb-4 relative z-10">☁️ OCI ARM Cluster</span>
           <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes" class="w-20 h-20 mb-4 transform group-hover/box:scale-110 transition-transform duration-300 relative z-10" />
@@ -200,7 +200,7 @@
       </span>
     </div>
   </div>
-  
+
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
     <div class="bg-[var(--color-palette-faded-pink)] rounded-2xl p-8 shadow-xl border border-[var(--color-palette-pink)] transform hover:scale-[1.01] transition-all duration-300 relative overflow-hidden group">
       <div class="absolute -top-16 -right-16 w-32 h-32 bg-[var(--color-palette-pink)] rounded-full group-hover:bg-[var(--color-palette-pink)] transition-colors duration-300"></div>
