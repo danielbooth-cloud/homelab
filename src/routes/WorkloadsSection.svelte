@@ -40,7 +40,7 @@
 
   const hostedServices = [
     'AdGuard', 'Chatbox AI', 'Bitwarden', 'Coder', 'Homepage', 'LanguageTool',
-    'LinkAce', 'Maybe', 'Ntfy', 'Nextcloud', 'Outline', 'OwnCloud',
+    'LinkAce', 'Maybe', 'Ntfy', 'Nextcloud', 'Outline', 'Telepresence',
     'Dokku', 'Ghost', 'Dependency-Track', 'Locust', 'SonarQube',
     'Kubechecks', 'Jira', 'Harbor', 'OAuth2-Proxy', 'Descheduler', 'Atlantis',
     'Chaos Mesh'
